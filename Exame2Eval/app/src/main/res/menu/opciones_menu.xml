@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Archivo: pantalla2.xml
+Descripción: XML con las opciones que tendra el menu al ejecutar la aplicación.
+
+Fecha   /       Autor       / Version
+09-11-22/ Pablo José Tolosa/ 1.0 Versión Inicial-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/opcion1" android:title="Inicio"></item>
+        <item android:id="@+id/opcion2" android:title="MAPAGoogle"></item>
+        <item android:id="@+id/opcion3" android:title="Formulario"></item>
+        <item android:id="@+id/opcion4" android:title="Pantalla resultados"></item>
+        <item android:id="@+id/opcion5" android:title="About"></item>
+
+</menu>
