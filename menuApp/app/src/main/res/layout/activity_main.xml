@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+
+    Archivo:activity_main.xml
+    Descripcion:Este archivo lleva toda la parte estetica de la primera pantalla
+
+    Fecha   / Autor / Version
+    07-11-22/ Martin / 1.0 Versión Inicial
+    09-11-22/ Martin / 1.5 Versión Avanzada
+    11-11-22/ Martin / 2.0 Versión Final
+   -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a la aplicación pulse los tres puntos de arriba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

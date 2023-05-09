@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Archivo:activity_main.xml
+Descripcion:Contiene el linearlayout con todo su contenido
+
+   Fecha   / Autor / Version
+   24-10-22/ Martin / 1.0 Versión Inicial
+   28-10-22/ Martin / 2.0 Versión Final
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="Descripcion del contenido de la imagen"
+        android:src="@android:drawable/ic_menu_gallery"></ImageView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/texto_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/texto_datos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </LinearLayout>
+</LinearLayout>

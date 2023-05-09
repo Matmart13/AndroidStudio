@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Archivo:activity_main.xml
+Descripcion:Contiene todo los objetos visuales de la primera ventana.
+
+   Fecha   / Autor / Version
+   24-10-22/ Martin / 1.0 Versión Inicial
+   28-10-22/ Martin / 2.0 Version Final
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#510669"
+    android:backgroundTint="#9C27B0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Cabecera"
+        android:layout_width="412dp"
+        android:layout_height="32dp"
+        android:text="Formulario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="4dp"
+        android:text="Nombre:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/Cabecera" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="246dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#F6F4F4"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#E91E63"
+        app:layout_constraintLeft_toRightOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/Cabecera" />
+
+    <TextView
+
+        android:id="@+id/apellido"
+        android:layout_width="152dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="72dp"
+        android:text="Apellidos:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/apellido"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="238dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FB0707"
+        app:layout_constraintLeft_toRightOf="@+id/apellido"
+        app:layout_constraintTop_toBottomOf="@+id/edittext1" />
+
+    <TextView
+        android:id="@+id/Género"
+        android:layout_width="166dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginRight="248dp"
+        android:text="Género:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellido" />
+
+    <RadioGroup
+        android:id="@+id/botones"
+        android:layout_width="245dp"
+        android:layout_height="192dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/Género"
+
+        app:layout_constraintTop_toBottomOf="@id/edittext2">
+
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="182dp"
+            android:layout_height="70dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Hombre"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="188dp"
+            android:layout_height="61dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Mujer"
+            android:textColor="@color/white"
+            android:textSize="16sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/otro"
+            android:layout_width="186dp"
+            android:layout_height="59dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Otro"
+            android:textColor="@color/white"
+            android:textSize="16sp"></RadioButton>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/TextoCurso"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginRight="224dp"
+        android:text="Tipo de Curso"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/Spinner"
+        app:layout_constraintTop_toBottomOf="@+id/apellido" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="230dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/Género"
+        app:layout_constraintTop_toBottomOf="@+id/Género" />
+
+    <ImageButton
+        android:id="@+id/ImageButton"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:onClick="Cambiarpantalla"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

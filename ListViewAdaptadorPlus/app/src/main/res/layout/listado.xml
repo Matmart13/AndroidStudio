@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Archivo:listado.xml
+Descripcion:Contiene la listView
+
+   Fecha   / Autor / Version
+   24-10-22/ Martin / 1.0 Versión Inicial
+   28-10-22/ Martin / 2.0 Versión Final
+-->
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Listview_listado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ></ListView>

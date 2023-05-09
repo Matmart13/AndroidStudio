@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+    Archivo:menu.xml
+    Descripcion: Contiene el aspecto visual y creacion del menu lateral de la aplicación
+
+    Fecha   / Autor / Version
+    07-11-22/ Martin / 1.0 Versión Inicial
+    09-11-22/ Martin / 1.5 Versión Avanzada
+    11-11-22/ Martin / 2.0 Versión Final
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcion1" android:title="Buenos dias"></item>
+    <item android:id="@+id/opcion2" android:title="Buenas noches"></item>
+
+</menu>

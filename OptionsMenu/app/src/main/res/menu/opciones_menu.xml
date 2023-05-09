@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- Menu Normal
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcion1" android:title="Opción de menu 1"></item>
+<item android:id="@+id/opcion2" android:title="Opción de menu 2"></item>
+<item android:id="@+id/opcion3" android:title="Opción de menu 3"></item>
+
+</menu>
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcion1" android:title="Opción de menu 1"></item>
+    <item android:id="@+id/opcion2" android:title="Opción de menu 2">
+        <menu>
+            <item android:id="@+id/MnOP2_1" android:title="Opcion 2.1"/>
+            <item android:id="@+id/MnOP2_2" android:title="Opcion 2.2"/>
+        </menu>
+    </item>
+    <item android:id="@+id/opcion3" android:title="Opción de menu 3"></item>
+
+</menu>
